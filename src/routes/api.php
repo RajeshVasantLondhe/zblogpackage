@@ -3,18 +3,18 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route; 
 use Illuminate\Support\Facades\Auth;
-use Models\Zblog;
+use Zivlify\Zblog\Models\Zblog;
 
 Route::group(['prefix' => 'api'], function(){
 
     Route::get('/zblog', function () {
 
-        // $blogs = Zblog::all();
+        $zblogs = Zblog::factory()->count(3)->make();
         return response()->json([
             'code' => 200,
             'error' => false,
             'message' => 'Activity is successfully done.',
-            'data' => []
+            'data' => $zblogs
         ], 200);
     });
    

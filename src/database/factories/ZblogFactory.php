@@ -1,6 +1,6 @@
 <?php
 
-// namespace Zivlify\Zblog\Database\Factories\ZblogFactory;
+namespace Zivlify\Zblog\database\factories;
 
 use Zivlify\Zblog\Models\Zblog;
 use Illuminate\Database\Eloquent\Factories\Factory;
