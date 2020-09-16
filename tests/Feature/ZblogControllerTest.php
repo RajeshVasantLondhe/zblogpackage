@@ -19,23 +19,11 @@ class ZblogControllerTest extends TestCase
     
         // $zblogs = Zblog::factory()->count(3)->make();
         $response = $this->withHeaders(['accept' => 'application/json'])->get('/api/zblog');
-       
         $this->assertSuccessResponse($response);
         
    
    }
-
-   
-   /** @test */
-   public function a_user_can_store_blog()
-   {
-        $data = ['title' => 'test a content '];
-        $response = $this->withHeaders(['accept' => 'application/json'])->post('/api/zblog', $data);
-        //    $response->assertOk();
-        // dd($response);
-        $this->assertSuccessResponse($response);
-   }
-
+ 
 
 }
  

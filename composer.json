@@ -25,9 +25,14 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Zivlify\\Zblog\\Tests\\": "tests/"
-
+            "Zivlify\\Zblog\\Tests\\": "tests/",
+            "Zivlify\\Zblog\\Models\\": "models/" 
         }
+    },
+    "extra" : {
+        "provider": [
+            "Zivlify\\Zblog\\ZblogServiceProvider"
+        ]
     }
 
     

@@ -44,6 +44,7 @@ class ComposerStaticInitcac0f5768955d0a8c58b60348e464747
         'Z' => 
         array (
             'Zivlify\\Zblog\\Tests\\' => 20,
+            'Zivlify\\Zblog\\Models\\' => 21,
             'Zivlify\\Zblog\\' => 14,
         ),
         'W' => 
@@ -166,6 +167,10 @@ class ComposerStaticInitcac0f5768955d0a8c58b60348e464747
         'Zivlify\\Zblog\\Tests\\' => 
         array (
             0 => __DIR__ . '/../..' . '/tests',
+        ),
+        'Zivlify\\Zblog\\Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/models',
         ),
         'Zivlify\\Zblog\\' => 
         array (
@@ -4567,10 +4572,12 @@ class ComposerStaticInitcac0f5768955d0a8c58b60348e464747
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\Mixin' => __DIR__ . '/..' . '/webmozart/assert/src/Mixin.php',
+        'Zivlify\\Zblog\\Models\\Zblog' => __DIR__ . '/../..' . '/src/models/Zblog.php',
         'Zivlify\\Zblog\\Tests\\CreatesPackage' => __DIR__ . '/../..' . '/tests/CreatesPackage.php',
         'Zivlify\\Zblog\\Tests\\Feature\\ZblogControllerTest' => __DIR__ . '/../..' . '/tests/Feature/ZblogControllerTest.php',
         'Zivlify\\Zblog\\Tests\\TestCase' => __DIR__ . '/../..' . '/tests/TestCase.php',
         'Zivlify\\Zblog\\ZblogServiceProvider' => __DIR__ . '/../..' . '/src/ZblogServiceProvider.php',
+        'Zivlify\\Zblog\\database\\factories\\ZblogFactory' => __DIR__ . '/../..' . '/src/database/factories/ZblogFactory.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',
