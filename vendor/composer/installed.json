@@ -3682,6 +3682,74 @@
         ]
     },
     {
+        "name": "spatie/laravel-query-builder",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/spatie/laravel-query-builder.git",
+            "reference": "e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc",
+            "reference": "e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/database": "^6.0|^7.0|^8.0",
+            "illuminate/http": "^6.0|^7.0|^8.0",
+            "illuminate/support": "^6.0|^7.0|^8.0",
+            "php": "^7.3"
+        },
+        "require-dev": {
+            "ext-json": "*",
+            "friendsofphp/php-cs-fixer": "^2.16",
+            "laravel/legacy-factories": "^1.0.4",
+            "orchestra/testbench": "^4.0|^5.0|^6.0",
+            "phpunit/phpunit": "^9.0"
+        },
+        "time": "2020-09-09T16:31:48+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Spatie\\QueryBuilder\\QueryBuilderServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Spatie\\QueryBuilder\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alex Vanderbist",
+                "email": "alex@spatie.be",
+                "homepage": "https://spatie.be",
+                "role": "Developer"
+            }
+        ],
+        "description": "Easily build Eloquent queries from API requests",
+        "homepage": "https://github.com/spatie/laravel-query-builder",
+        "keywords": [
+            "laravel-query-builder",
+            "spatie"
+        ],
+        "funding": [
+            {
+                "url": "https://spatie.be/open-source/support-us",
+                "type": "custom"
+            }
+        ]
+    },
+    {
         "name": "swiftmailer/swiftmailer",
         "version": "dev-master",
         "version_normalized": "9999999-dev",
@@ -5899,12 +5967,12 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/string.git",
-            "reference": "82a2cb8a1b96d6a8c0d801eaedf0ac7f0281aded"
+            "reference": "15b391c17c13623a81da54c81971e2148558bbe4"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/string/zipball/82a2cb8a1b96d6a8c0d801eaedf0ac7f0281aded",
-            "reference": "82a2cb8a1b96d6a8c0d801eaedf0ac7f0281aded",
+            "url": "https://api.github.com/repos/symfony/string/zipball/15b391c17c13623a81da54c81971e2148558bbe4",
+            "reference": "15b391c17c13623a81da54c81971e2148558bbe4",
             "shasum": ""
         },
         "require": {
@@ -5921,7 +5989,7 @@
             "symfony/translation-contracts": "^1.1|^2",
             "symfony/var-exporter": "^4.4|^5.0"
         },
-        "time": "2020-09-11T12:25:32+00:00",
+        "time": "2020-09-15T12:13:10+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

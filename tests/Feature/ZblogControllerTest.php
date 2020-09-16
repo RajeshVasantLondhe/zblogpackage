@@ -17,7 +17,7 @@ class ZblogControllerTest extends TestCase
    public function a_user_can_get_all_the_blogs()
    {
     
-        // $zblogs = Zblog::factory()->count(3)->make();
+        $zblogs = Zblog::factory()->count(3)->create();
         $response = $this->withHeaders(['accept' => 'application/json'])->get('/api/zblog');
         $this->assertSuccessResponse($response);
         

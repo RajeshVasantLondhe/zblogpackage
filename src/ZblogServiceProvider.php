@@ -16,6 +16,6 @@ class ZblogServiceProvider extends ServiceProvider {
 
     public function register()
     {
-        # code...
+        
     }
 }
