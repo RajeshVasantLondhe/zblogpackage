@@ -1,8 +1,6 @@
 <?php
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route; 
-use Illuminate\Support\Facades\Auth;
 use Zivlify\Zblog\Models\Zblog;
 
 Route::group(['prefix' => 'api'], function(){
