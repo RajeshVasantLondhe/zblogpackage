@@ -4606,7 +4606,6 @@ class ComposerStaticInitcac0f5768955d0a8c58b60348e464747
         'ValueError' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
         'Webmozart\\Assert\\Assert' => __DIR__ . '/..' . '/webmozart/assert/src/Assert.php',
         'Webmozart\\Assert\\Mixin' => __DIR__ . '/..' . '/webmozart/assert/src/Mixin.php',
-        'Zivlify\\Zblog\\Events\\ZblogEvent' => __DIR__ . '/../..' . '/src/Events/ZblogEvent.php',
         'Zivlify\\Zblog\\Http\\Controllers\\ZblogController' => __DIR__ . '/../..' . '/src/Http/Controllers/ZblogController.php',
         'Zivlify\\Zblog\\Listeners\\ZblogListner' => __DIR__ . '/../..' . '/src/Listeners/ZblogListner.php',
         'Zivlify\\Zblog\\Models\\Zblog' => __DIR__ . '/../..' . '/src/Models/Zblog.php',

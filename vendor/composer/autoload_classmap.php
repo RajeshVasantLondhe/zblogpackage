@@ -4186,7 +4186,6 @@ return array(
     'ValueError' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/ValueError.php',
     'Webmozart\\Assert\\Assert' => $vendorDir . '/webmozart/assert/src/Assert.php',
     'Webmozart\\Assert\\Mixin' => $vendorDir . '/webmozart/assert/src/Mixin.php',
-    'Zivlify\\Zblog\\Events\\ZblogEvent' => $baseDir . '/src/Events/ZblogEvent.php',
     'Zivlify\\Zblog\\Http\\Controllers\\ZblogController' => $baseDir . '/src/Http/Controllers/ZblogController.php',
     'Zivlify\\Zblog\\Listeners\\ZblogListner' => $baseDir . '/src/Listeners/ZblogListner.php',
     'Zivlify\\Zblog\\Models\\Zblog' => $baseDir . '/src/Models/Zblog.php',

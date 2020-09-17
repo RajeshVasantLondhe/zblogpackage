@@ -26,8 +26,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Zivlify\\Zblog\\Tests\\": "tests/",
-            "Zivlify\\Zblog\\Models\\": "Models/"
+            "Zivlify\\Zblog\\Tests\\": "tests/"
         }
     },
     "extra" : {
@@ -37,5 +36,6 @@
             ]
         }
     }
- 
+
+    
 }
