@@ -33,17 +33,12 @@ class ZblogController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            
+        
+        $request->validate([ 
             'title' => ['required', 'string'],
             'meta_keywords' => ['required', 'string'],
-            'meta_description' => ['required', 'string'],
-            'short_description' => ['required', 'string'],
-            'title' => ['required', 'string'],
-            'body' => ['required', 'string'],
-            'published_date' => ['required', 'date_format:Y-m-d H:i:s'],
-            'display_date' => ['required', 'date_format:Y-m-d H:i:s'],
-
+            'meta_description' => ['required', 'string'], 
+            'body' => ['required', 'string'], 
         ]);
 
         $zblog = new Zblog();
@@ -60,7 +55,7 @@ class ZblogController extends Controller
         $zblog->slug = \Illuminate\Support\Str::slug($request->title, "-");
       
         $zblog->save();
-
+       
         if($zblog) {
             $zblog->parcel = \Illuminate\Support\Str::uuid($zblog->title);
             return response()->json([

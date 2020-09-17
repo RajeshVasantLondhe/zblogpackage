@@ -19,7 +19,6 @@ class CreateZblogsTable extends Migration
             $table->string('title');
             $table->text('meta_keywords');
             $table->text('meta_description');
-            $table->string('link_name');
             $table->text('short_description');
             $table->text('body');
             
