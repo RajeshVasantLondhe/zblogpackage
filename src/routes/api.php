@@ -18,6 +18,22 @@ Route::group(['prefix' => 'api'], function(){
         ], 200);
 
     });
+
+
+    Route::post('/zblog', function () {
+ 
+        $zblogs = Zblog::all();
+        $payload = request()->all();
+        
+        return response()->json([
+            'code' => 200,
+            'error' => false,
+            'message' => 'Activity is successfully done.',
+            'data' => $zblogs
+        ], 200);
+
+    });
+
    
 });
  

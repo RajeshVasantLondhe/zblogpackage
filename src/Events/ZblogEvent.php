@@ -1,6 +1,6 @@
 <?php
 
-namespace Events;
+namespace Zivlify\Zblog\Events;
 
 use Illuminate\Broadcasting\Channel;
 use Illuminate\Broadcasting\InteractsWithSockets;

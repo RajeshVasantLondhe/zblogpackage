@@ -1,6 +1,6 @@
 <?php
 
-namespace Listeners;
+namespace Zivlify\Zblog\Listeners;
 
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Queue\InteractsWithQueue;
