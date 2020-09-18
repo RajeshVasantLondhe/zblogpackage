@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "573657b035fbc5b08493da571d6c2ec6",
+    "content-hash": "8a3be35d4ac2981b82ae3ef0fe227b7e",
     "packages": [
         {
             "name": "brick/math",
@@ -400,12 +400,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "bf32c4478a3dc75f46569cdb26206e69a6c65f2d"
+                "reference": "de811ea7f7dc7ecfc686b25fba48e4b0dac473e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/bf32c4478a3dc75f46569cdb26206e69a6c65f2d",
-                "reference": "bf32c4478a3dc75f46569cdb26206e69a6c65f2d",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/de811ea7f7dc7ecfc686b25fba48e4b0dac473e6",
+                "reference": "de811ea7f7dc7ecfc686b25fba48e4b0dac473e6",
                 "shasum": ""
             },
             "require": {
@@ -555,7 +555,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2020-09-15T18:45:32+00:00"
+            "time": "2020-09-16T21:29:00+00:00"
         },
         {
             "name": "league/commonmark",
@@ -891,12 +891,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d"
+                "reference": "47877317e385831030ede076a54414602a868667"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/6c7646154181013ecd55e80c201b9fd873c6ee5d",
-                "reference": "6c7646154181013ecd55e80c201b9fd873c6ee5d",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/47877317e385831030ede076a54414602a868667",
+                "reference": "47877317e385831030ede076a54414602a868667",
                 "shasum": ""
             },
             "require": {
@@ -972,7 +972,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-11T19:00:58+00:00"
+            "time": "2020-09-17T09:12:06+00:00"
         },
         {
             "name": "opis/closure",
@@ -1640,12 +1640,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-query-builder.git",
-                "reference": "e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc"
+                "reference": "e17fbfc4a5a89f320d5d99eb0373b5224551d98f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc",
-                "reference": "e0bfb70056e9b337d0026af33ef2be8b8ba6d0bc",
+                "url": "https://api.github.com/repos/spatie/laravel-query-builder/zipball/e17fbfc4a5a89f320d5d99eb0373b5224551d98f",
+                "reference": "e17fbfc4a5a89f320d5d99eb0373b5224551d98f",
                 "shasum": ""
             },
             "require": {
@@ -1698,7 +1698,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2020-09-09T16:31:48+00:00"
+            "time": "2020-09-17T07:36:28+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -3863,12 +3863,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "15b391c17c13623a81da54c81971e2148558bbe4"
+                "reference": "0ebd63de9f7e874e428e26cb22de991833f5969f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/15b391c17c13623a81da54c81971e2148558bbe4",
-                "reference": "15b391c17c13623a81da54c81971e2148558bbe4",
+                "url": "https://api.github.com/repos/symfony/string/zipball/0ebd63de9f7e874e428e26cb22de991833f5969f",
+                "reference": "0ebd63de9f7e874e428e26cb22de991833f5969f",
                 "shasum": ""
             },
             "require": {
@@ -3940,7 +3940,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-15T12:13:10+00:00"
+            "time": "2020-09-17T07:22:48+00:00"
         },
         {
             "name": "symfony/translation",
@@ -4445,6 +4445,48 @@
                 "validate"
             ],
             "time": "2020-07-08T17:02:28+00:00"
+        },
+        {
+            "name": "zivlify/core",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:zivlify/core.git",
+                "reference": "6f25a840697137300c02accc4932f2277d9ab65e"
+            },
+            "require": {
+                "php": "^7.3"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^6.0",
+                "phpunit/phpunit": "^9.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Zivlify\\Core\\": "src/"
+                },
+                "files": [
+                    "src/Helpers/Loader.php"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Laravel\\Core\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Deepesh Madkar",
+                    "email": "deepesh@zivtrix.in"
+                }
+            ],
+            "description": "The core helper package for zivlify modules",
+            "time": "2020-09-17T11:26:36+00:00"
         }
     ],
     "packages-dev": [
@@ -5034,12 +5076,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "c99da517f9e7b6e6c4067611d804808c34d8cec3"
+                "reference": "4ed7830352e5c8b3d3f108149f579696d25b796d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/c99da517f9e7b6e6c4067611d804808c34d8cec3",
-                "reference": "c99da517f9e7b6e6c4067611d804808c34d8cec3",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/4ed7830352e5c8b3d3f108149f579696d25b796d",
+                "reference": "4ed7830352e5c8b3d3f108149f579696d25b796d",
                 "shasum": ""
             },
             "require": {
@@ -5051,7 +5093,7 @@
             },
             "require-dev": {
                 "phpspec/phpspec": "^6.0",
-                "phpunit/phpunit": "^8.0"
+                "phpunit/phpunit": "^8.0 || ^9.0 <9.3"
             },
             "type": "library",
             "extra": {
@@ -5089,7 +5131,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2020-07-21T10:09:02+00:00"
+            "time": "2020-09-16T14:21:12+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",

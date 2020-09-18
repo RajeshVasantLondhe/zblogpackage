@@ -11,7 +11,8 @@
     ],
     "require": {
         "php": "^7.3",
-        "spatie/laravel-query-builder": "dev-master"
+        "spatie/laravel-query-builder": "dev-master",
+        "zivlify/core": "v1.0.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",
@@ -34,8 +35,13 @@
                 "Zivlify\\Zblog\\ZblogServiceProvider"
             ]
         }
-    },
+    }, 
+    "minimum-stability": "dev",
+    "repositories":[
+        {
+            "type": "git",
+            "url": "git@github.com:zivlify/core.git"
+        }
+    ]
 
-    "minimum-stability": "dev"
-
-} 
+}

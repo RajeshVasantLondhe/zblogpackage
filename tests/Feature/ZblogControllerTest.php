@@ -18,6 +18,7 @@ class ZblogControllerTest extends TestCase
    {
     
       $zblogs = Zblog::factory()->count(3)->create();
+      
       $response = $this->withHeaders(['accept' => 'application/json'])->get('/api/zblog');
       $this->assertSuccessResponse($response);
          
@@ -37,8 +38,6 @@ class ZblogControllerTest extends TestCase
          "display_date" => now(),
          "image_url" => "url",
          "image_alt" => "url",
-         "banner_status" => 1,
-
       ];
       
       $response = $this->withHeaders(['accept' => 'application/json'])->post('/api/zblog', $payload);

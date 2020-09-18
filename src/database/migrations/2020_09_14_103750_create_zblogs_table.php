@@ -27,18 +27,17 @@ class CreateZblogsTable extends Migration
 
             $table->string('image_url')->nullable();
             $table->string('image_alt')->nullable(); 
-            $table->timestamp('banner_status')->nullable();
-            
+       
             $table->string('parcel')->nullable(); 
             $table->string('slug')->nullable();
             $table->boolean('is_active')->default(0);
+            $table->boolean('has_featured')->default(0);
             $table->boolean('has_deleted')->default(0);
             $table->boolean('has_cancelled')->default(0);
             $table->boolean('has_blocked')->default(0);
  
             $table->unsignedBigInteger('user_id')->default(0);
-            $table->timestamps();
- 
+            $table->timestamps(); 
 
         });
     }

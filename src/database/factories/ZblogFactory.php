@@ -18,7 +18,6 @@ class ZblogFactory extends Factory
             'title' => $this->faker->name,
             'meta_keywords' => $this->faker->name,
             'meta_description' => $this->faker->name,
-            'link_name' => $this->faker->name,
             'short_description' => $this->faker->name,
             'body' => $this->faker->name,
             'published_date' => $this->faker->date,

@@ -15,14 +15,8 @@ class ZblogController extends Controller
      */
     public function index()
     {
-        $zblogs = Zblog::all();  
-        return response()->json([
-            'code' => 200,
-            'error' => false,
-            'message' => 'Activity is successfully done.',
-            'data' => $zblogs
-        ], 200);
-        
+        $zblogs = Zblog::all()->toArray();
+        return zivlify()->respond(zivlify()->success($zblogs));
     }
 
     /**
@@ -33,39 +27,10 @@ class ZblogController extends Controller
      */
     public function store(Request $request)
     {
-        
-        $request->validate([ 
-            'title' => ['required', 'string'],
-            'meta_keywords' => ['required', 'string'],
-            'meta_description' => ['required', 'string'], 
-            'body' => ['required', 'string'], 
-        ]);
-
         $zblog = new Zblog();
-        $zblog->title = $request->title;
-        $zblog->meta_keywords = $request->meta_keywords;
-        $zblog->meta_description = $request->meta_description;
-        $zblog->short_description = $request->short_description;
-        $zblog->body = $request->body;
-        $zblog->published_date = $request->published_date;
-        $zblog->display_date = $request->display_date;
-        $zblog->image_url = $request->image_url;
-        $zblog->image_alt = $request->image_alt;
-        $zblog->banner_status = $request->banner_status;
-        $zblog->slug = \Illuminate\Support\Str::slug($request->title, "-");
-      
-        $zblog->save();
-       
-        if($zblog) {
-            $zblog->parcel = \Illuminate\Support\Str::uuid($zblog->title);
-            return response()->json([
-                'code' => 200,
-                'error' => false,
-                'message' => 'Activity is successfully done.',
-                'data' => $zblog
-            ], 200);
-        }
 
+        $request->validate($zblog->zblogvalidate); 
+        $zblog->createBlog($request);
        
     }
 

@@ -5,7 +5,9 @@ namespace Zivlify\Zblog\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Zivlify\Zblog\database\factories\ZblogFactory;
- 
+use Zivlify\Zblog\Repository\Zblogrepo;
+
+
 class Zblog extends Model
 {
 
@@ -18,5 +20,18 @@ class Zblog extends Model
         return ZblogFactory::new();
     }
  
+    public $zblogvalidate = [
+            'title' => ['required', 'string'],
+            'meta_keywords' => ['required', 'string'],
+            'meta_description' => ['required', 'string'], 
+            'short_description' => ['required', 'string'], 
+            'body' => ['required', 'text'], 
+    ];
 
+    public function createBlog($request)
+    { 
+        $zblogrepo = new Zblogrepo();
+        $zblogrepo->createBlogMain($request);
+    }
+ 
 }
